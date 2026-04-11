@@ -1,0 +1,15 @@
+# system files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# logs
+*.log
+
+# env files (if you ever add secrets)
+.env
+.env.local
+
+
