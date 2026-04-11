@@ -1,0 +1,56 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double&family=Source+Code+Pro:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+  --font-display: 'Bitcount Grid Double', monospace;
+  --font-mono: 'Source Code Pro', monospace;
+}
+body {
+
+  margin: 0;
+  height: 100vh;
+  color: #f0ece4;
+  font-family: var(--font-mono);
+}
+
+#lock-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: transparent;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 6rem;
+  margin: 0;
+  line-height: 1;
+}
+
+#tagline {
+  font-size: 0.75rem;
+  margin: 0.5rem 0 2rem 0;
+}
+
+#message p:first-child {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+#message p:last-child {
+  font-size: 0.85rem;
+  margin: 0.4rem 0 0 0;
+}
+
+#pfp {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
