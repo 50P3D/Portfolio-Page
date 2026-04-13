@@ -237,3 +237,7 @@ license: free to use with credit
 * [ ] final list of projects / papers to include
 * [ ] photo selection for background
 * [ ] whether paper entries link to pdf, doi, or medium writeu
+
+
+
+look at vue / REACT

@@ -14,11 +14,6 @@ function setCookie() {
 
 
 
-
-function unlock() {
-  window.location.href = 'portfolio.html'
-}
-
 const token = getToken()
 
 if (VALID_TOKENS.includes(token)) {
