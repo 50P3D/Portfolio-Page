@@ -131,3 +131,18 @@ body {
   color: rgba(240,236,228,0.2);
   letter-spacing: 0.06em;
 }
+
+body {
+  animation: slideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

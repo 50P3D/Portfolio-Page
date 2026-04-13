@@ -18,7 +18,15 @@ const token = getToken()
 
 if (VALID_TOKENS.includes(token)) {
   setCookie()
-  unlock()
+  setTimeout(function() {
+    unlock('portfolio.html')
+  }, 2500)
 } else if (hasCookie()) {
-  unlock()
+  setTimeout(function() {
+    unlock('portfolio.html')
+  }, 2500)
+} else {
+  setTimeout(function() {
+    unlock('locked.html')
+  }, 6000)
 }

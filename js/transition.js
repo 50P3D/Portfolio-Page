@@ -1,6 +1,6 @@
-function unlock() {
+function unlock(destination) {
   document.body.classList.add('unlocking')
   setTimeout(function() {
-    window.location.href = 'portfolio.html'
+    window.location.href = destination
   }, 800)
 }
