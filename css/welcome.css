@@ -1,27 +1,44 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double&family=Source+Code+Pro:ital,wght@0,300;0,400;1,300&display=swap');
 
 :root {
   --font-display: 'Bitcount Grid Double', monospace;
   --font-mono: 'Source Code Pro', monospace;
 }
-body {
 
+body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   color: #f0ece4;
   font-family: var(--font-mono);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#lock-screen {
+#welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#welcome-inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#pfp {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+#text-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  background: transparent;
+  gap: 0.4rem;
 }
 
 h1 {
@@ -31,29 +48,19 @@ h1 {
   line-height: 1;
 }
 
-#tagline {
-  font-size: 0.75rem;
-  margin: 0.5rem 0 2rem 0;
-}
-
-#message p:first-child {
-  font-size: 1.8rem;
+.line1, .line2 {
+  font-size: 1.1rem;
+  color: rgba(240,236,228,0.6);
   margin: 0;
+  font-style: italic;
 }
 
-#message p:last-child {
-  font-size: 0.85rem;
-  margin: 0.4rem 0 0 0;
+.line3 {
+  font-size: 1rem;
+  color: rgba(240,236,228,0.35);
+  margin: 0.8rem 0 0 0;
+  letter-spacing: 0.04em;
 }
-
-#pfp {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
 
 body {
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
@@ -63,20 +70,4 @@ body {
 body.unlocking {
   transform: translateY(-60px);
   opacity: 0;
-}
-
-
-body {
-  animation: slideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
