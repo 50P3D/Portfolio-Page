@@ -1,3 +1,6 @@
+
+document.cookie = 'aa_welcome=seen; max-age=300; path=/'
+
 const VALID_TOKENS = ['li', 'gh', 'nfc']
 
 function getToken() {
@@ -11,7 +14,6 @@ function hasCookie() {
 function setCookie() {
   document.cookie = 'aa_access=granted; max-age=604800; path=/'
 }
-
 
 
 const token = getToken()

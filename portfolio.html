@@ -9,6 +9,10 @@
 <body>
 
   <script>
+    if (!document.cookie.includes('aa_welcome=seen')) {
+      window.location.href = 'index.html'
+    }
+
     if (!document.cookie.includes('aa_access=granted')) {
       window.location.href = 'index.html'
     }
