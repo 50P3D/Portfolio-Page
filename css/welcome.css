@@ -71,3 +71,24 @@ body.unlocking {
   transform: translateY(-60px);
   opacity: 0;
 }
+
+
+#welcome-inner {
+  animation: trainSlideIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform: translateX(-120vw);
+}
+
+@keyframes trainSlideIn {
+  0% {
+    transform: translateX(-120vw);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

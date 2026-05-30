@@ -21,14 +21,14 @@ const token = getToken()
 if (VALID_TOKENS.includes(token)) {
   setCookie()
   setTimeout(function() {
-    unlock('portfolio.html')
-  }, 2500)
+    unlock('app.html')
+  }, 7000)
 } else if (hasCookie()) {
   setTimeout(function() {
-    unlock('portfolio.html')
-  }, 2500)
+    unlock('app.html')
+  }, 7000)
 } else {
   setTimeout(function() {
     unlock('locked.html')
-  }, 6000)
+  }, 7000)
 }
